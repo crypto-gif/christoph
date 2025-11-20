@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+    body {
+      cursor: crosshair;
+    }
+    .gradient-background {
+        /*background: linear-gradient(to right, #ff7e5f, #feb47b);*/
+        background: linear-gradient(to right, #B1232D, #feb47b);
+        /* Add other styles if needed */
+        padding: 50px;
+        color: black;
+        text-align: center;
+    }
+    btn {
+    cursor: pointer;
+    }
+    @media (min-width: 650px) {
+    #slideshow {
+      max-height: 50vh;
+      max-width: 50vw;
+      justify-self: center;
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+      overflow: hidden;
+    }
+    #carouselslides {
+      justify-self: center;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* Ensure the item scales proportionally */
+    }
+    }
+  </style>
+  </head>
+
+<body>
+
+  <div id="navbar">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+      </svg> WOOT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./toys-for-boys.html">Toys for Boys</a></li>
+              <li><a class="dropdown-item" href="./mens-health.html">Men's health</a></li>
+              <li><a class="dropdown-item" href="./dob-ravidson.html">Dob Ravidson Prime Manswear</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./pump-it-sportscave.html">Pump it. Sportscave</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./travel-agency.html">Trips to Loch Manliness</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <div id="a-cave-in-the-woot" class="gradient-background">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">A Hut in The WOOT</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">We provide the hideout. Where a man is allowed to be what he can be: Nothing less than a man.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <a href="./products.html" class="btn btn-dark">
+            Browse our products
+          </a>
+          <a href="./social-media.html" class="btn btn-bg-transparent btn-outline-dark">
+            Interact with our community
+          </a>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 50vh;">
+        <div class="container px-5">
+          <img src="./assets/fullsize/Sigmawolf723.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="slideshow">
+    <div class="container">
+      <div id="carouselslides" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/thumbnail/thumbnail_image0.jpg" class="d-block w-100" alt="schematic of dob ravidson brand sweater">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/thumbnail/thumbnail_image1.jpg" class="d-block w-100" alt="schematic of biceps">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/thumbnail/thumbnail_image2.jpg" class="d-block w-100" alt="schematic of lake in mountains">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="offer">
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Our Offer</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Improve yourself</h3>
+          <p>We all look up to the great men in history. How can one become great? Growth through perseverance, nutrition and reps. We have what you need.</p>
+          <a href="./pump-it-sportscave.html" class="btn btn-dark">
+            Pump it. Sportscave
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Lead the pack</h3>
+          <p>To gaze into the abyss is to know yourself. No office chair or hot showers made a hero. Join us on the trip of a lifetime and assess if you're worthy to lead.</p>
+          <a href="./travel-agency.html" class="btn btn-dark">
+            Book a trip
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Dare to Fight</h3>
+          <p>Kleider machen Leute, as the germans say. We don't. We know that you are Alpha, and it's not because of any garment. Nevertheless, underline your status with our:</p>
+          <a href="./dob-ravidson.html" class="btn btn-dark">
+            Prime Manswear
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Copyright &copy; 2025 WOOT. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
